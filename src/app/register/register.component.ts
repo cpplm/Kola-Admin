@@ -15,7 +15,9 @@ export class RegisterComponent implements OnInit {
     for (const i in this.validateForm.controls) {
       this.validateForm.controls[i].markAsDirty();
     }
-    this.router.navigateByUrl('login');
+    if (this.validateForm.valid) {
+      this.router.navigateByUrl('login');
+    }
   }
 
   constructor(private fb: FormBuilder, private router: Router) {
