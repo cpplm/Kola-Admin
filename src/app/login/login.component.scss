@@ -1,0 +1,36 @@
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.login-form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -160px 0 0 -160px;
+    width: 320px;
+    height: 280px;
+    padding: 36px;
+    box-shadow: 0 0 100px rgba(0,0,0,.08);
+  
+    button {
+      width: 100%;
+    }
+  
+    p {
+      color: rgb(204, 204, 204);
+      text-align: center;
+      margin-top: 16px;
+  
+      span {
+        &:first-child {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  
