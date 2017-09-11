@@ -8,7 +8,7 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.routing";
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
-import { HashLocationStrategy, LocationStrategy } from "@angular/common";
+// import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
@@ -21,7 +21,7 @@ import { HashLocationStrategy, LocationStrategy } from "@angular/common";
     NgZorroAntdModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  // providers: [{ provide: LocationSrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
